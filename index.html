@@ -3,54 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ton Nom — Portfolio</title>
-  <meta name="description" content="Je conçois des sites modernes, performants et élégants." />
+  <title>Benoit Sassus — SDR/BDR Internship</title>
+  <meta name="description" content="SDR/BDR — ESSEC. 235+ clients générés en outbound. Muay Thai mindset : focus, growth, adaptabilité." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <meta property="og:title" content="Benoit Sassus — SDR/BDR Internship">
+  <meta property="og:description" content="Disponible dès septembre 2025. 235+ clients via outbound. Vidéo de présentation.">
+  <meta property="og:image" content="images/cover.jpg">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="header">
-    <nav class="container">
-      <a href="#" class="logo">TN</a>
+    <nav class="container navbar">
+      <a href="#" class="logo">BS</a>
       <ul class="nav">
+        <li><a href="#valeur">Valeur</a></li>
+        <li><a href="#skills">Compétences</a></li>
         <li><a href="#projets">Projets</a></li>
-        <li><a href="#apropos">À propos</a></li>
         <li><a href="#contact" class="btn">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero" data-animate>
-      <h1>Je crée des expériences web <em>modernes</em> et <em>élégantes</em>.</h1>
-      <p>Designer & développeur front-end basé à Paris.</p>
-      <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+    <!-- HERO -->
+    <section class="hero container" data-animate>
+      <div class="hero-text">
+        <h1>Salut, moi c’est <span class="accent">Benoit</span> — SDR/BDR</h1>
+        <p class="lead">
+          ESSEC, mindset Muay Thai (focus & growth). J’ai déjà contribué à acquérir
+          <strong><span class="counter" data-target="235">0</span>+ clients</strong> via outbound,
+          construit un <strong>CRM from scratch</strong> et lancé des projets digitaux.<br/>
+          <em>Disponible dès septembre 2025.</em>
+        </p>
+        <div class="cta">
+          <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+          <a href="#video" class="btn">Vidéo (1 min)</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="images/portrait.jpg" alt="Benoit Sassus" />
+      </div>
     </section>
 
-    <section id="projets" class="projects" data-animate>
-      <h2>Projets récents</h2>
-      <div class="grid">
+    <!-- 3 WAYS / VALEUR -->
+    <section id="valeur" class="value container" data-animate>
+      <h2>3 façons dont j’apporte de la valeur</h2>
+      <div class="grid three">
         <article class="card">
-          <img src="images/projet1.jpg" alt="Aperçu du projet 1" />
-          <h3>Projet 1</h3>
-          <p>Une courte description du projet.</p>
+          <h3>1) Sales déjà testées</h3>
+          <p>
+            Fast-paced startup, outbound de A à Z : cold call, email, LinkedIn, pipeline end-to-end.
+            <strong>235+ clients générés</strong>. CRM custom. <span class="muted">Je ne pars pas de zéro.</span>
+          </p>
         </article>
         <article class="card">
-          <img src="images/projet2.jpg" alt="Aperçu du projet 2" />
-          <h3>Projet 2</h3>
-          <p>Une courte description du projet.</p>
+          <h3>2) Digital mindset</h3>
+          <p>
+            Shopify, paid (Meta), automatisations (Zapier), contenu & growth. J’aime builder vite et itérer.
+          </p>
+        </article>
+        <article class="card">
+          <h3>3) Adaptabilité</h3>
+          <p>
+            6 mois de camp Muay Thai en Thaïlande : discipline, pression, exigence. <span class="muted">Je performe sous contrainte.</span>
+          </p>
         </article>
       </div>
     </section>
 
-    <section id="apropos" class="about" data-animate>
-      <h2>À propos</h2>
-      <p>Passionné par le design et le code, j’aime créer des interfaces simples, intuitives et performantes.</p>
+    <!-- SKILLS -->
+    <section id="skills" class="skills container" data-animate>
+      <h2>Stack & Outils</h2>
+      <ul class="logo-list">
+        <li><img src="images/logos/hubspot.svg" alt="HubSpot" /><span>HubSpot</span></li>
+        <li><img src="images/logos/salesforce.svg" alt="Salesforce" /><span>Salesforce</span></li>
+        <li><img src="images/logos/apollo.svg" alt="Apollo.io" /><span>Apollo.io</span></li>
+        <li><img src="images/logos/notion.svg" alt="Notion" /><span>Notion</span></li>
+        <li><img src="images/logos/excel.svg" alt="Excel" /><span>Excel</span></li>
+        <li><img src="images/logos/kaspr.svg" alt="Kaspr" /><span>Kaspr</span></li>
+      </ul>
     </section>
-  </main>
 
-  <footer id="contact" class="footer" data-animate>
-    <p>© <span id="year"></span> Ton Nom — <a href="mailto:toi@exemple.com">toi@exemple.com</a></p>
-  </footer>
+    <!-- VIDEO -->
+    <section id="video" class="video container" data-animate>
+      <div class="video-wrap">
+        <iframe
+          title="Présentation — Benoit Sassus"
+          src="https://www.youtube.com/embed/9IKT5XvxutU"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen loading="lazy"></iframe>
+      </div>
+      <p class="muted center">La vidéo en bref : qui je suis, ce que j’ai fait et pourquoi je peux aider votre équipe.</p>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets" class="projects container" data-animate>
+      <h2>Projets récents</h2>
+      <div id="projects-grid" class="grid"></div>
+      <!-- Fallback si JS off -->
+      <noscript>
+        <div class="grid">
+          <article class="card">
+            <img src="images/projects/vyro.jpg" alt="Vyro" />
+            <h3>Vyro</h3>
+            <p>E-commerce : Brand & Website Development</p>
+          </article>
+          <article class="card">
+            <img src="images/projects/interior-moderna.jpg" alt="Interior Moderna" />
+            <h3>Interior Moderna</h3>
+            <p>E-commerce : Brand & Website Development</p>
+          </article>
+        </div>
+      </noscript>
+    </section>
+
+    <!-- CONTACT -->
+    <footer id="contact" class="footer" data-animate>
+      <div class="container">
+        <h2>Travaillons ensemble</h2>
+        <p>Intéressé(e) ? Écrivez-moi, je réponds vite.</p>
+        <p>
+          <a class="btn btn-primary" href="mailto:benoit.sassus@gmail.com?subject=SDR%20Internship">benoit.sassus@gmail.com</a>
+          <span class="muted">•</span>
+          <a class="btn" href="https://www.linkedin.com/in/benoit-sassus" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+        <p class="tiny muted">© <span id="year"></span> Benoit Sassus • Disponible dès septembre 2025 — ESSEC</p>
+      </div>
+    </footer>
+  </main>
 
   <script src="main.js" defer></script>
 </body>
